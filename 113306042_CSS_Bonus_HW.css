@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* 控制表單列 */
+.form-row {
+    margin-bottom: 18px; 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+
+
+label {
+    width: 80px; 
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+/* 第一行 input1 */
+#input1 {
+    width: calc(100% - 100px); 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 第二行 input2 和 input3 */
+#input2,
+#input3 {
+    width: calc(50% - 55px); 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#input2 {
+    margin-right: 10px; 
+}
+
+/* 確保 input2 的標籤與 input1 左側完全對齊 */
+label[for="input2"],
+label[for="input1"],
+label[for="input4"] {
+    width: 80px;
+    text-align: right;
+}
+
+/* 第三行 input4 */
+#input4 {
+    width: calc(100% - 100px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 第四行 textarea */
+textarea {
+    width: calc(100% - 100px);
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* 禁止調整大小 */
+}
+
+/* 調整 textarea 標籤的位置，使其與 textarea 頂端對齊 */
+label[for="textarea"] {
+    align-self: flex-start;
+    margin-top: 6px; 
+    line-height: 1;
+}
+
+/* 圖片行 */
+.picture-row {
+    align-items: flex-start; 
+}
+
+#picture1 {
+    width: calc(100% - 100px); 
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 0;
+    aspect-ratio: 16/9; 
+}
+
+
+label[for="picture1"] {
+    align-self: flex-start;
+    margin-top: 0;
+}
